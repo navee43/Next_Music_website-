@@ -7,13 +7,13 @@ import { BackgroundGradient } from './ui/background-gradient'
 
 interface Course{
 
-        id: Number,
+        id: number,
         title: string,
         slug: string,
         description:string,
-        price: Number,
+        price: number,
         instructor: string,
-        isFeatured: Boolean,
+        isFeatured: boolean,
        image:string
 }
 function FeaturedCourse() {

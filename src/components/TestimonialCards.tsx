@@ -4,7 +4,7 @@ import React from 'react'
 import { cn } from "@/lib/utils";
 
  
-import  { useEffect, useState } from "react";
+
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { div } from 'motion/react-client';
 
@@ -56,11 +56,11 @@ function TestimonialCards() {
             <div className='flex justify-center w-full  overflow-hidden
             px-4 sm:px-6 lg:px-8'>
                 <div className='w-full max-w-6xl'>
-                <div> <InfiniteMovingCards
+                 <InfiniteMovingCards
         items={testimonials}
         direction="right"
         speed="slow"
-      /></div>
+      />
                 </div>
             </div>
         

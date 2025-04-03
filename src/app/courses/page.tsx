@@ -4,16 +4,16 @@ import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import CourseData from '@/data/music_courses.json'
-import { div } from 'motion/react-client';
+
 
 interface Courses {
-    id: Number,
+    id: number,
         title: string,
         slug: string,
         description:string,
-        price: Number,
+        price: number,
         instructor: string,
-        isFeatured: Boolean,
+        isFeatured: boolean,
        image:string
     
 }
@@ -21,9 +21,9 @@ interface Courses {
 function page() {
   return (
     <div className='min-h-screen bg-black py-12 pt-36'>
-        <div className=''>
+        
         <h1 className="text-3xl md:text-7xl text-center font-sans font-bold mb-8 text-white">All courses ({CourseData.courses.length})</h1>  
-        </div>
+       
         <div  className='flex justify-center items-center flex-wrap '>
 
           {
